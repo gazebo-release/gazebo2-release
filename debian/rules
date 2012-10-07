@@ -12,3 +12,8 @@ export DH_OPTIONS=-v --buildsystem=cmake
 
 %:
 	dh  $@
+
+override_dh_auto_test:
+	echo -- Skipping tests
+	#dh_auto_test
+	true
