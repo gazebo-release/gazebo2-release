@@ -1,0 +1,15 @@
+Source: gazebo
+Maintainer: Brian Gerkey <gerkey@osrfoundation.org>
+Section: devel
+Priority: extra
+Build-Depends: build-essential, libtinyxml-dev, libtbb-dev, libxml2-dev, libqt4-dev, pkg-config, libprotoc-dev, libfreeimage-dev, libprotobuf-dev, protobuf-compiler, libboost-all-dev, freeglut3-dev, cmake, libogre-dev, libcurl4-openssl-dev, libtar-dev, robot-player-dev, libcegui-mk2-dev, libavformat-dev, libavcodec-dev, libltdl-dev, libgtest-dev, debhelper
+Homepage: http://gazebosim.org
+
+Package: gazebo
+Architecture: amd64
+Section: devel
+Priority: extra
+Depends: libboost-filesystem1.46.1 (>= 1.46.1-1), libboost-program-options1.46.1 (>= 1.46.1-1), libboost-system1.46.1 (>= 1.46.1-1), libboost-thread1.46.1 (>= 1.46.1-1), libc6 (>= 2.14), libfreeimage3, libgcc1 (>= 1:4.1.1), libgl1-mesa-glx | libgl1, libogre-1.7.4, libprotobuf7, libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.6.1), libstdc++6 (>= 4.6), libtinyxml2.6.2, libx11-6, libxml2 (>= 2.7.4)
+Description: 3D dynamics simulator for robotics
+ Open source robot simulator designed to accurately simulate robots and worlds.
+Homepage: http://gazebosim.org
