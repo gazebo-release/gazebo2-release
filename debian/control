@@ -2,14 +2,14 @@ Source: gazebo
 Maintainer: Brian Gerkey <gerkey@osrfoundation.org>
 Section: devel
 Priority: extra
-Build-Depends: build-essential, libtinyxml-dev, libtbb-dev, libxml2-dev, libqt4-dev, pkg-config, libprotoc-dev, libfreeimage-dev, libprotobuf-dev, protobuf-compiler, libboost-all-dev, freeglut3-dev, cmake, libogre-dev, libcurl4-openssl-dev, libtar-dev, robot-player-dev, libcegui-mk2-dev, libavformat-dev, libavcodec-dev, libltdl-dev, libgtest-dev, debhelper
+Build-Depends: cmake, build-essential, debhelper, libfreeimage-dev, libprotoc-dev, libprotobuf-dev, protobuf-compiler, freeglut3-dev, libcurl4-openssl-dev, libtinyxml-dev, libtar-dev, libtbb-dev, ros-fuerte-visualization-common, libxml2-dev, pkg-config, libqt4-dev, ros-fuerte-urdfdom, libltdl-dev, libboost-thread-dev, libboost-signals-dev, libboost-system-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-regex-dev, libboost-iostreams-dev
 Homepage: http://gazebosim.org
 
 Package: gazebo
 Architecture: amd64
 Section: devel
 Priority: extra
-Depends: libboost-filesystem1.46.1 (>= 1.46.1-1), libboost-program-options1.46.1 (>= 1.46.1-1), libboost-system1.46.1 (>= 1.46.1-1), libboost-thread1.46.1 (>= 1.46.1-1), libc6 (>= 2.14), libfreeimage3, libgcc1 (>= 1:4.1.1), libgl1-mesa-glx | libgl1, libogre-1.7.4, libprotobuf7, libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.6.1), libstdc++6 (>= 4.6), libtinyxml2.6.2, libx11-6, libxml2 (>= 2.7.4)
+Depends: libfreeimage3, libprotoc7, libprotobuf7, freeglut3, libcurl4-openssl-dev, libtinyxml2.6.2, libtar0, libtbb2, ros-fuerte-visualization-common, libxml2, pkg-config, libqtcore4, libqtgui4, ros-fuerte-urdfdom, libltdl7, libboost-thread1.46.1, libboost-signals1.46.1, libboost-system1.46.1, libboost-filesystem1.46.1, libboost-program-options1.46.1, libboost-regex1.46.1, libboost-iostreams1.46.1
 Description: 3D dynamics simulator for robotics
  Open source robot simulator designed to accurately simulate robots and worlds.
 Homepage: http://gazebosim.org
