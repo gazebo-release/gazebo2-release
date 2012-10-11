@@ -1,6 +1,6 @@
 gazebo (1.2.0-0ubuntu4) precise; urgency=high
 
-  * Release from dev as of 3338:a189eedec699
+  * Release from dev as of 3343:5726b1193421
 
  -- Brian Gerkey <gerkey@osrfoundation.org>  Wed, 10 Oct 2012 23:00:00 -0700
 
