@@ -1,3 +1,9 @@
+gazebo (1.2.0-0ubuntu6) precise; urgency=high
+
+  * Release from dev @ d6c1b3d3d42 
+
+ -- Brian Gerkey <gerkey@osrfoundation.org>  Sat, 13 Oct 2012 15:00:00 -0700
+
 gazebo (1.2.0-0ubuntu5) precise; urgency=high
 
   * Updated package maintainer overlay of cmake/setup.sh.in
