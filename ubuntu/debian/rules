@@ -20,6 +20,9 @@ override_dh_auto_configure:
 override_dh_shlibdeps:
 	LD_LIBRARY_PATH=/opt/ros/fuerte/lib:/opt/ros/fuerte/stacks/visualization_common/ogre/ogre/lib dh_shlibdeps -- --ignore-missing-info
 
+override_dh_auto_install:
+	dh_auto_install --destdir=debian/gazebp
+
 override_dh_auto_test:
 	echo -- Skipping tests
 	#dh_auto_test
