@@ -15,8 +15,9 @@ export DH_OPTIONS=-v
 
 override_dh_auto_configure:
 	# Make Gazebo find ROS's OGRE and urdfdom libraries
-	# Use the DEBUG version to obtain debug symbol information
-	dh_auto_configure -- -DPKG_CONFIG_PATH=/opt/ros/fuerte/lib/pkgconfig:/opt/ros/fuerte/stacks/visualization_common/ogre/ogre/lib/pkgconfig -DCMAKE_BUILD_TYPE=Debug
+	# Not using the Debug CMAKE compilation type because of losing the
+	# optimizations. Just add the -g to CXX_FLAGS
+	dh_auto_configure -- -DPKG_CONFIG_PATH=/opt/ros/fuerte/lib/pkgconfig:/opt/ros/fuerte/stacks/visualization_common/ogre/ogre/lib/pkgconfig -DCMAKE_CXX_FLAGS=-g
 
 override_dh_shlibdeps:
 	LD_LIBRARY_PATH=/opt/ros/fuerte/lib:/opt/ros/fuerte/stacks/visualization_common/ogre/ogre/lib dh_shlibdeps -- --ignore-missing-info
