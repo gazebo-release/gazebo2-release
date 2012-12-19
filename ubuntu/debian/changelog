@@ -1,5 +1,5 @@
-gazebo-prerelease (1.3.0) precise; urgency=high
+gazebo-prerelease (1.3.1) precise; urgency=high
 
-  * Release 1.3.0
+  * Release 1.3.1
 
  -- Nate Koenig <nate@osrfoundation.org>  Mon, 03 Dec 2012 09:42:00 -0700
