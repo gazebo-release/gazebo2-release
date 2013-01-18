@@ -14,3 +14,12 @@ Depends: libfreeimage3, libprotoc7, libprotobuf-dev, freeglut3, libcurl4-openssl
 Description: 3D dynamics simulator for robotics
  Open source robot simulator designed to accurately simulate robots and worlds.
 Homepage: http://gazebosim.org
+
+Package: gazebo-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends:
+    gazebo (= ${binary:Version}), ${misc:Depends}
+Description: debugging symbols for gazebo
+ This package contains the debugging symbols for gazebo
