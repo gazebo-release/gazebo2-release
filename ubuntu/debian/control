@@ -15,11 +15,11 @@ Description: 3D dynamics simulator for robotics
  Open source robot simulator designed to accurately simulate robots and worlds.
 Homepage: http://gazebosim.org
 
-Package: gazebo-dbg
+Package: gazebo-prerelease-dbg
 Architecture: any
 Section: debug
 Priority: extra
 Depends:
-    gazebo (= ${binary:Version}), ${misc:Depends}
+    gazebo-prerelease (= ${binary:Version}), ${misc:Depends}
 Description: debugging symbols for gazebo
  This package contains the debugging symbols for gazebo
