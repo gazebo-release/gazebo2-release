@@ -1,3 +1,9 @@
+gazebo-prerelease (1.4.4) precise; urgency=high
+
+  * Release 1.4.4
+
+ -- Nate Koenig <nate@osrfoundation.org>  Mon, 03 Dec 2012 09:42:00 -0700
+
 gazebo-prerelease (1.4.3) precise; urgency=high
 
   * Release 1.4.3
