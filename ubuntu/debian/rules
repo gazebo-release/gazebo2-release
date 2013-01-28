@@ -14,13 +14,13 @@ export DH_OPTIONS=-v
 	dh  $@
 
 override_dh_auto_configure:
-	# Make Gazebo find ROS's OGRE and urdfdom libraries
+	# Make Gazebo find ROS's and urdfdom libraries
 	# Not using the Debug CMAKE compilation type because of losing the
 	# optimizations. By default it will go for CMAKE RelWithDebInfo.
-	dh_auto_configure -- -DPKG_CONFIG_PATH=/opt/ros/fuerte/lib/pkgconfig:/opt/ros/fuerte/stacks/visualization_common/ogre/ogre/lib/pkgconfig
+	CMAKE_PREFIX_PATH=/opt/ros/fuerte dh_auto_configure
 
 override_dh_shlibdeps:
-	LD_LIBRARY_PATH=/opt/ros/fuerte/lib:/opt/ros/fuerte/stacks/visualization_common/ogre/ogre/lib dh_shlibdeps -- --ignore-missing-info
+	LD_LIBRARY_PATH=/opt/ros/fuerte/lib dh_shlibdeps -- --ignore-missing-info
 
 override_dh_auto_install:
 	dh_auto_install --destdir=debian/gazebo-prerelease
