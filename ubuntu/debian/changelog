@@ -1,3 +1,9 @@
+gazebo-prerelease (1.4.8) precise; urgency=high
+
+  * Release 1.4.8
+
+ -- John Hsu <hsu@osrfoundation.org>  Fri, 22 Feb 2013 12:20:00 -0700
+
 gazebo-prerelease (1.4.7) precise; urgency=high
 
   * Release 1.4.7
