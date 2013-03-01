@@ -1,0 +1,59 @@
+gazebo (1.4.0) precise; urgency=high
+
+  * Release 1.4.0
+
+ -- Nate Koenig <nate@osrfoundation.org>  Fri, 1 Feb 2013 09:42:00 -0700
+
+gazebo (1.3.1) precise; urgency=high
+
+  * Release 1.3.1
+
+ -- Nate Koenig <nate@osrfoundation.org>  Fri, 14 Dec 2012 09:42:00 -0700
+
+gazebo (1.3.0) precise; urgency=high
+
+  * Release 1.3.0
+
+ -- Nate Koenig <nate@osrfoundation.org>  Mon, 03 Dec 2012 09:42:00 -0700
+
+gazebo (1.2.6) precise; urgency=high
+
+  * Release 1.2.6
+
+ -- Brian Gerkey <gerkey@osrfoundation.org>  Thu, 08 Oct 2012 09:30:00 -0700
+
+gazebo (1.2.5) precise; urgency=high
+
+  * Release 1.2.5
+
+ -- Brian Gerkey <gerkey@osrfoundation.org>  Mon, 22 Oct 2012 09:30:00 -0700
+
+gazebo (1.2.4) precise; urgency=high
+
+  * Release 1.2.4
+
+ -- Nate Koenig <nate@osrfoundation.org>  Mon, 15 Oct 2012 14:30:00 -0700
+
+gazebo (1.2.3) precise; urgency=high
+
+  * Release 1.2.3
+
+ -- Nate Koenig <nate@osrfoundation.org>  Mon, 15 Oct 2012 14:30:00 -0700
+
+gazebo (1.2.2) precise; urgency=high
+
+  * Release 1.2.2
+
+ -- Nate Koenig <nate@osrfoundation.org>  Mon, 15 Oct 2012 14:30:00 -0700
+
+gazebo (1.2.1) precise; urgency=high
+
+  * Release 1.2.1
+
+ -- Brian Gerkey <gerkey@osrfoundation.org>  Mon, 15 Oct 2012 14:30:00 -0700
+
+gazebo (1.2.0-0ubuntu1) precise; urgency=high
+
+  * First 1.2.0 release from default, @ aa88215578c0
+
+ -- Brian Gerkey <gerkey@osrfoundation.org>  Mon, 15 Oct 2012 14:30:00 -0700
