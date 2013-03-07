@@ -1,6 +1,12 @@
+gazebo-prerelease (1.5.1-2~precise) precise; urgency=high
+
+  * Release 1.5.1-2
+
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  Thu, 07 Mar 2013 02:12:00 -0700
+
 gazebo-prerelease (1.5.1-1~precise) precise; urgency=high
 
-  * Release 1.5.1
+  * Release 1.5.1-1
 
  -- Jose Luis Rivero <jrivero@osrfoundation.org>  Thu, 07 Mar 2013 02:12:00 -0700
 
