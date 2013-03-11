@@ -1,6 +1,6 @@
-gazebo (1.5.0~precise) precise; urgency=high
+gazebo (1.5.0-1~precise) precise; urgency=high
 
-  * Release 1.5.0
+  * Release 1.5.0-1
 
  -- Nate Koenig <nate@osrfoundation.org>  Mon, 11 Mar 2013 09:42:00 -0700
 
