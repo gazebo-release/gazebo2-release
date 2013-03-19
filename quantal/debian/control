@@ -23,6 +23,5 @@ Priority: extra
 Depends:
     gazebo-nightly (= ${binary:Version}), ${misc:Depends}
 Conflicts: gazebo-dbg
-Description: 3D dynamics simulator for robotics
 Description: debugging symbols for gazebo
  This package contains the debugging symbols for gazebo
