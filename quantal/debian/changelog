@@ -1,3 +1,9 @@
+gazebo (1.8.4-1~quantal) quantal; urgency=high
+
+  * Release 1.8.4-1
+
+ -- Nate Koenig <nate@osrfoundation.org>  Mon, 03 Jun 2013 21:13:00 -0700
+
 gazebo (1.8.3-1~quantal) quantal; urgency=high
 
   * Release 1.8.3-1
