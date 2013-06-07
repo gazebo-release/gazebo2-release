@@ -1,3 +1,9 @@
+gazebo (1.8.6-1~precise) precise; urgency=high
+
+  * Release 1.8.6-1
+
+ -- Nate Koenig <nate@osrfoundation.org>  Fri, 07 Jun 2013 16:38:00 -0700
+
 gazebo (1.8.5-1~precise) precise; urgency=high
 
   * Release 1.8.5-1
