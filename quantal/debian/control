@@ -1,6 +1,6 @@
 Source: gazebo-prerelease
 Standards-Version: 3.9.3
-Maintainer: Brian Gerkey <gerkey@osrfoundation.org>
+Maintainer: Nate Koenig <nate@osrfoundation.org>
 Section: devel
 Priority: extra
 Build-Depends: cmake, debhelper (>= 7.0.50~), libfreeimage-dev, libprotoc-dev, libprotobuf-dev, protobuf-compiler, freeglut3-dev, libcurl4-openssl-dev, libtinyxml-dev, libtar-dev, libtbb-dev, libogre-dev, libxml2-dev, pkg-config, libqt4-dev, ros-groovy-urdfdom, ros-groovy-console-bridge, libltdl-dev, libboost-thread-dev, libboost-signals-dev, libboost-system-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-regex-dev, libboost-iostreams-dev, robot-player-dev, libcegui-mk2-dev, libavformat-dev, libavcodec-dev, libswscale-dev
@@ -12,6 +12,7 @@ Section: devel
 Priority: extra
 Depends: libfreeimage3, libprotoc7, libprotobuf-dev, freeglut3, libcurl4-openssl-dev, libtinyxml2.6.2, libtar0, libtbb2, libogre-dev, libxml2, pkg-config, libqtcore4, libqtgui4, ros-groovy-urdfdom, ros-groovy-console-bridge, libltdl7, libboost-thread1.49.0, libboost-signals1.49.0, libboost-system1.49.0, libboost-filesystem1.49.0, libboost-program-options1.49.0, libboost-regex1.49.0, libboost-iostreams1.49.0, robot-player, libcegui-mk2-0.7.6, libavformat53, libavcodec53 | libavcodec-extra-53, libswscale2, ${misc:Depends}
 Conflicts: gazebo, gazebo-nightly
+Breaks: drcsim (<< 2.6.5)
 Description: 3D dynamics simulator for robotics
  Open source robot simulator designed to accurately simulate robots and worlds.
 Homepage: http://gazebosim.org
