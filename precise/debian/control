@@ -36,8 +36,8 @@ Build-Depends: cmake,
      libavcodec-dev,
      libswscale-dev,
      libbullet-dev
-Vcs-Browser: https://bitbucket.org/osrf/gazebo
-Vcs-Hg: https://bitbucket.org/osrf/gazebo
+Vcs-Browser: https://bitbucket.org/osrf/gazebo-release
+Vcs-Hg: https://bitbucket.org/osrf/gazebo-release
 Homepage: http://gazebosim.org
 
 Package: gazebo
