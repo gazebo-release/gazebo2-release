@@ -59,7 +59,7 @@ Description: Gazebo simulator - Main package
  This package contains all the main files to make the simulator work,
  including executables, libraries, models, etc.
 
-Package: libgazebo-dev
+Package: gazebo-dev
 Architecture: any
 Section: libdevel
 Depends: libtbb-dev,
