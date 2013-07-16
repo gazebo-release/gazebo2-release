@@ -44,38 +44,8 @@ Package: gazebo
 Architecture: any
 Section: devel
 Priority: extra
-Depends: libfreeimage3,
-     libprotoc7,
-     libprotobuf-dev,
-     freeglut3,
-     libcurl4-openssl-dev,
-     libtinyxml2.6.2,
-     libtar0,
-     libtbb2,
-     libogre-dev,
-     libxml2,
-     pkg-config,
-     libqtcore4,
-     libqtgui4,
-     ros-fuerte-urdfdom,
-     ros-fuerte-console-bridge,
-     libltdl7,
-     libboost-thread1.46.1,
-     libboost-signals1.46.1,
-     libboost-system1.46.1,
-     libboost-filesystem1.46.1,
-     libboost-program-options1.46.1,
-     libboost-regex1.46.1,
-     libboost-iostreams1.46.1,
-     robot-player,
-     libcegui-mk2-0.7.5,
-     libavformat53 | libavformat-extra-53,
-     libavcodec53 | libavcodec-extra-53,
-     libswscale2 | libswscale-extra-2,
-     libbullet,
-     ttf-dejavu-core,
-     ${misc:Depends}
-Recommends: libtbb-dev
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends}
 Conflicts: gazebo-prerelease, gazebo-nightly
 Breaks: drcsim (<< 2.6.5)
 Description: Gazebo simulator - Main package
@@ -89,13 +59,43 @@ Description: Gazebo simulator - Main package
  This package contains all the main files to make the simulator work,
  including executables, libraries, models, etc.
 
+Package: libgazebo-dev
+Architecture: any
+Section: libdevel
+Depends: libtbb-dev,
+         libxml2-dev,
+         libqt4-dev,
+         libprotoc-dev,
+         libfreeimage-dev,
+         libprotobuf-dev,
+         libboost-all-dev,
+         freeglut3-dev,
+         libogre-1.8-dev,
+         libtar-dev,
+         libcurl4-openssl-dev,
+         libcegui-mk2-dev,
+         libgts-dev,
+         libode-dev,
+         gazebo (= ${source:Version}),
+         ${misc:Depends}
+Multi-Arch: same
+Description: Gazebo simulator - Main package
+ Gazebo is a multi-robot simulator for outdoor environments. Like
+ Stage (part of the Player project), it is capable of simulating a
+ population of robots, sensors and objects, but does so in a
+ three-dimensional world. It generates both realistic sensor feedback
+ and physically plausible interactions between objects (it includes an
+ accurate simulation of rigid-body physics).
+ .
+ This package contains development files (headers, shared library
+ symbolic link and pkg-config file).
+
 Package: gazebo-dbg
 Architecture: any
 Section: debug
 Priority: extra
 Depends:
     gazebo (= ${binary:Version}), ${misc:Depends}
-Recommends: libtbb-dev
 Conflicts: gazebo-prerelease-dbg, gazebo-nightly-dbg
 Description: Gazebo simulator - Debugging symbols 
  Gazebo is a multi-robot simulator for outdoor environments. Like
