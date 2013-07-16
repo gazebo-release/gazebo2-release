@@ -1,4 +1,4 @@
-Source: gazebo
+Source: gazebo-prerelease
 Standards-Version: 3.9.3
 Maintainer: Nate Koenig <nate@osrfoundation.org>
 Section: devel
@@ -18,8 +18,6 @@ Build-Depends: cmake,
      libxml2-dev,
      pkg-config,
      libqt4-dev,
-     ros-groovy-urdfdom,
-     ros-groovy-console-bridge,
      libltdl-dev,
      libboost-thread-dev,
      libboost-signals-dev,
@@ -33,59 +31,57 @@ Build-Depends: cmake,
      libavformat-dev,
      libavcodec-dev,
      libswscale-dev,
-     libbullet-dev
+     libbullet-dev,
+     sdformat
 Homepage: http://gazebosim.org
 
-Package: gazebo
+Package: gazebo-prerelease
 Architecture: any
 Section: devel
 Priority: extra
 Depends: libfreeimage3,
- libprotoc7,
- libprotobuf-dev,
- freeglut3,
- libcurl4-openssl-dev,
- libtinyxml2.6.2,
- libtar0,
- libtbb2,
- libtbb-dev,
- libogre-dev,
- libxml2,
- pkg-config,
- libqtcore4,
- libqtgui4,
- ros-groovy-urdfdom,
- ros-groovy-console-bridge,
- libltdl7,
- libboost-thread1.49.0,
- libboost-signals1.49.0,
- libboost-system1.49.0,
- libboost-filesystem1.49.0,
- libboost-program-options1.49.0,
- libboost-regex1.49.0,
- libboost-iostreams1.49.0,
- robot-player,
- libcegui-mk2-0.7.6,
- libcegui-mk2-dev,
- libavformat53 | libavformat-extra-53,
- libavcodec53 | libavcodec-extra-53,
- libswscale2 | libswscale-extra-2,
- libbullet,
- ${misc:Depends}
-Recommends: libtbb-dev
-Conflicts: gazebo-prerelease, gazebo-nightly
+     libprotoc7,
+     libprotobuf-dev,
+     freeglut3,
+     libcurl4-openssl-dev,
+     libtinyxml2.6.2,
+     libtar0,
+     libtbb2,
+     libtbb-dev,
+     libogre-dev,
+     libxml2,
+     pkg-config,
+     libqtcore4,
+     libqtgui4,
+     libltdl7,
+     libboost-thread1.49.0,
+     libboost-signals1.49.0,
+     libboost-system1.49.0,
+     libboost-filesystem1.49.0,
+     libboost-program-options1.49.0,
+     libboost-regex1.49.0,
+     libboost-iostreams1.49.0,
+     robot-player,
+     libcegui-mk2-0.7.6,
+     libcegui-mk2-dev,
+     libavformat53 | libavformat-extra-53,
+     libavcodec53 | libavcodec-extra-53,
+     libswscale2 | libswscale-extra-2,
+     libbullet,
+     sdformat,
+     ${misc:Depends}
+Conflicts: gazebo, gazebo-nightly
 Breaks: drcsim (<< 2.6.5)
 Description: 3D dynamics simulator for robotics
  Open source robot simulator designed to accurately simulate robots and worlds.
 Homepage: http://gazebosim.org
 
-Package: gazebo-dbg
+Package: gazebo-prerelease-dbg
 Architecture: any
 Section: debug
 Priority: extra
 Depends:
-    gazebo (= ${binary:Version}), ${misc:Depends}
-Recommends: libtbb-dev
-Conflicts: gazebo-prerelease-dbg, gazebo-nightly-dbg
+    gazebo-prerelease (= ${binary:Version}), ${misc:Depends}
+Conflicts: gazebo-dbg, gazebo-nightly-dbg
 Description: debugging symbols for gazebo
  This package contains the debugging symbols for gazebo
