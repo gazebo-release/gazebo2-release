@@ -67,10 +67,10 @@ Depends: libfreeimage3,
      libavformat53 | libavformat-extra-53,
      libavcodec53 | libavcodec-extra-53,
      libswscale2 | libswscale-extra-2,
-     sdformat,
      libbullet,
+     sdformat,
      ${misc:Depends}
-Conflicts: gazebo
+Conflicts: gazebo, gazebo-prerelease
 Description: 3D dynamics simulator for robotics
  Open source robot simulator designed to accurately simulate robots and worlds.
 Homepage: http://gazebosim.org
@@ -81,6 +81,6 @@ Section: debug
 Priority: extra
 Depends:
     gazebo-nightly (= ${binary:Version}), ${misc:Depends}
-Conflicts: gazebo-dbg
+Conflicts: gazebo-dbg, gazebo-prerelease-dbg
 Description: debugging symbols for gazebo
  This package contains the debugging symbols for gazebo
