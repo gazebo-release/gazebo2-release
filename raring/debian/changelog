@@ -1,3 +1,9 @@
+gazebo-prerelease (1.9.4-3~raring) raring; urgency=high
+
+  * Release 1.9.4-3
+
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  Tue, 17 Jul 2013 14:23:00 -0700
+
 gazebo-prerelease (1.9.4-2~raring) raring; urgency=high
 
   * Release 1.9.4-2
