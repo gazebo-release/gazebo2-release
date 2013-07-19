@@ -31,7 +31,7 @@ Build-Depends: cmake,
      libavformat-dev,
      libavcodec-dev,
      libswscale-dev,
-     sdformat,
+     sdformat (>= 1.4.4~)
      libbullet-dev
 Homepage: http://gazebosim.org
 
@@ -68,7 +68,7 @@ Depends: libfreeimage3,
      libavcodec53 | libavcodec-extra-53,
      libswscale2 | libswscale-extra-2,
      libbullet,
-     sdformat,
+     sdformat (>= 1.4.4~),
      ${misc:Depends}
 Conflicts: gazebo, gazebo-prerelease
 Description: 3D dynamics simulator for robotics
