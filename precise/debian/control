@@ -31,7 +31,7 @@ Build-Depends: cmake,
      libavformat-dev,
      libavcodec-dev,
      libswscale-dev,
-     sdformat (>= 1.4.4~)
+     sdformat (>= 1.4.4~),
      libbullet-dev
 Homepage: http://gazebosim.org
 
