@@ -69,7 +69,6 @@ Depends: libfreeimage3,
      sdformat (>= 1.4.4~),
      ${misc:Depends}
 Conflicts: gazebo-prerelease, gazebo-nightly
-Breaks: drcsim (<< 2.6.5)
 Description: 3D dynamics simulator for robotics
  Open source robot simulator designed to accurately simulate robots and worlds.
 Homepage: http://gazebosim.org
