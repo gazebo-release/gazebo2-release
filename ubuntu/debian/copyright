@@ -206,10 +206,6 @@ License: BSD-3-clause or LGPL-2.1
  this library in the file GIMPACT-LICENSE-LGPL.TXT.  The BSD-style license that
  is included with this library in the file GIMPACT-LICENSE-BSD.TXT.
 
-Files: deps/OPCODE/*
-Copyright: 2001 Pierre Terdiman
-License: ???
-
 Files: deps/opende/ou/*
 Copyright: 2008 Oleh Derevenko
 License: LGPL-3+ or BSD or ZLIB
