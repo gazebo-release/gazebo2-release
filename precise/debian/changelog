@@ -1,3 +1,15 @@
+gazebo (1.9.0-1~precise) precise; urgency=high
+
+  * Release 1.9.0-1
+
+ -- Steve Peters <scpeters@osrfoundation.org>  Tue, 23 Jul 2013 16:23:00 -0700
+
+gazebo (1.8.7-1~precise) precise; urgency=high
+
+  * Release 1.8.7-1
+
+ -- Steve Peters <scpeters@osrfoundation.org>  Tue, 16 Jul 2013 00:54:00 -0700
+
 gazebo (1.8.6-1~precise) precise; urgency=high
 
   * Release 1.8.6-1
