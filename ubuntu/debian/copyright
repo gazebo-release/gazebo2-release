@@ -39,7 +39,7 @@ License: ZLIB
 
 Files: gazebo/gui/qtpropertybrowser/*
 Copyright: 2010 Nokia Corporation and/or its subsidiary(-ies)
-License: BSD-3-clause
+License: BSD-3-clause 
  This file is part of a Qt Solutions component.
  .
  You may use this file under the terms of the BSD license as follows:
@@ -112,7 +112,7 @@ License: BSD-2-clause
  form must reproduce the above copyright notice, this list of conditions and the
  following disclaimer in the documentation and/or other materials provided with
  the distribution.
- .
+
  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -125,8 +125,8 @@ License: BSD-2-clause
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Files: deps/fcl
-Copyright: Copyright: 2011, Willow Garage, Inc
-License: BSD-3-clause
+Copyright: Copyright: 2011, Willow Garage, Inc 
+License: BSD-3-clause 
  Copyright (c) 2011, Willow Garage, Inc.
  All rights reserved.
  .
@@ -201,7 +201,7 @@ License: BSD-3-clause or LGPL-2.1
  .
  * The GNU Lesser General Public License as published by the Free Software
  Foundation; either version 2.1 of the License, or (at your option) any later
- version.
+ version. 
  * The text of the GNU Lesser General Public License is included with
  this library in the file GIMPACT-LICENSE-LGPL.TXT.  The BSD-style license that
  is included with this library in the file GIMPACT-LICENSE-BSD.TXT.
@@ -211,21 +211,21 @@ Copyright: 2008 Oleh Derevenko
 License: LGPL-3+ or BSD or ZLIB
  All rights reserved.  e-mail: odar@eleks.com (change all "a" to "e")
  .
- This library is free software; you can redistribute it and/or
- modify it under the terms of EITHER:
-   (1) The GNU Lesser General Public License as published by the Free
-       Software Foundation; either version 3 of the License, or (at
-       your option) any later version. The text of the GNU Lesser
-       General Public License is included with this library in the
-       file LICENSE-LESSER.TXT. Since LGPL is the extension of GPL
-       the text of GNU General Public License is also provided for
-       your information in file LICENSE.TXT.
-   (2) The BSD-style license that is included with this library in
-       the file LICENSE-BSD.TXT.
-   (3) The zlib/libpng license that is included with this library in
-       the file LICENSE-ZLIB.TXT
+ This library is free software; you can redistribute it and/or         
+ modify it under the terms of EITHER:                                  
+   (1) The GNU Lesser General Public License as published by the Free  
+       Software Foundation; either version 3 of the License, or (at    
+       your option) any later version. The text of the GNU Lesser      
+       General Public License is included with this library in the     
+       file LICENSE-LESSER.TXT. Since LGPL is the extension of GPL     
+       the text of GNU General Public License is also provided for     
+       your information in file LICENSE.TXT.                           
+   (2) The BSD-style license that is included with this library in     
+       the file LICENSE-BSD.TXT.                                       
+   (3) The zlib/libpng license that is included with this library in   
+       the file LICENSE-ZLIB.TXT                                       
  .
- This library is distributed WITHOUT ANY WARRANTY, including implied
- warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- See the files LICENSE.TXT and LICENSE-LESSER.TXT or LICENSE-BSD.TXT
+ This library is distributed WITHOUT ANY WARRANTY, including implied   
+ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.      
+ See the files LICENSE.TXT and LICENSE-LESSER.TXT or LICENSE-BSD.TXT   
  or LICENSE-ZLIB.TXT for more details.

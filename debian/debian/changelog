@@ -1,5 +1,0 @@
-gazebo (1.9.0-1) unstable; urgency=low
-
-  * Package upstream release 1.9.0. (Closes: #705440)
-
- -- Nate Koenig <nate@osrfoundation.org>  Tue, 09 Apr 2013 14:50:35 +0900
