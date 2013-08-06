@@ -43,11 +43,6 @@ override_dh_install:
 	&& rm $$tmp \
 	&& ln -s /usr/share/fonts/truetype/ttf-dejavu/DejaVuSans.ttf $$tmp
 
-	# Install wrapper
-	# FIXME: TO BE REMOVED WITH THE NEXT RELEASE
-	cp debian/gazebo-wrapper debian/gazebo/usr/bin/gazebo \
-	&& chmod 755 debian/gazebo/usr/bin/gazebo
-
 # Continue even when tests are failing for now.
 override_dh_auto_test:
 	dh_auto_test || true
