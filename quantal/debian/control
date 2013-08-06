@@ -1,7 +1,7 @@
 Source: gazebo
 Standards-Version: 3.9.3
 Maintainer: Nate Koenig <nate@osrfoundation.org>
-Section: devel
+Section: science
 Priority: extra
 Build-Depends: cmake,
      debhelper (>= 7.0.50~),
@@ -36,8 +36,6 @@ Homepage: http://gazebosim.org
 
 Package: gazebo
 Architecture: any
-Section: devel
-Priority: extra
 Depends: libfreeimage3,
      libprotoc7,
      libprotobuf-dev,
@@ -76,7 +74,6 @@ Homepage: http://gazebosim.org
 Package: gazebo-dbg
 Architecture: any
 Section: debug
-Priority: extra
 Depends:
     gazebo (= ${binary:Version}), ${misc:Depends}
 Conflicts: gazebo-prerelease-dbg, gazebo-nightly-dbg
