@@ -69,7 +69,6 @@ Depends: libfreeimage3,
 Conflicts: gazebo-prerelease, gazebo-nightly
 Description: 3D dynamics simulator for robotics
  Open source robot simulator designed to accurately simulate robots and worlds.
-Homepage: http://gazebosim.org
 
 Package: gazebo-dbg
 Architecture: any
