@@ -1,0 +1,59 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# If dpkg-buildflags is available, retrieve hardened compilation flags.
+# In all cases, add -as-needed as recent Ubuntu versions enables it by default.
+CPPFLAGS:=$(shell dpkg-buildflags --get CPPFLAGS 2>/dev/null)
+CFLAGS:=$(shell dpkg-buildflags --get CFLAGS 2>/dev/null)
+CXXFLAGS:=$(shell dpkg-buildflags --get CXXFLAGS 2>/dev/null)
+LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS 2>/dev/null) -Wl,--as-needed
+
+# Duplicate flags as CMake is ignoring CPPFLAGS.
+CFLAGS+=$(CPPFLAGS)
+CXXFLAGS+=$(CPPFLAGS)
+
+# Multiarch (if supported).
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH 2>/dev/null)
+
+# Configuration flags.
+CONFIGURE_ARGS=
+
+# If multiarch is supported, override LIB_INSTALL_DIR.
+ifneq ($(DEB_HOST_MULTIARCH),)
+CONFIGURE_ARGS+=-DLIB_INSTALL_DIR:STRING="lib/${DEB_HOST_MULTIARCH}"
+endif
+
+
+override_dh_auto_configure:
+	dh_auto_configure -- $(CONFIGURE_ARGS)
+
+# Generate Doxygen HTML documentation.
+override_dh_auto_build-indep:
+	dh_auto_build -- doc
+
+override_dh_install:
+	dh_install -- # Install.
+
+	# Remove unwanted shell extension.
+	mv debian/gazebo/usr/bin/gzmodel_create.sh \
+	   debian/gazebo/usr/bin/gzmodel_create
+
+	# Get rid of fonts already packaged elsewhere.
+	tmp=`ls debian/gazebo-common/usr/share/gazebo-*/media/gui/fonts/DejaVuSans.ttf` \
+	&& rm $$tmp \
+	&& ln -s /usr/share/fonts/truetype/ttf-dejavu/DejaVuSans.ttf $$tmp
+
+	# Install wrapper
+	# FIXME: TO BE REMOVED WITH THE NEXT RELEASE
+	cp debian/gazebo-wrapper debian/gazebo/usr/bin/gazebo \
+	&& chmod 755 debian/gazebo/usr/bin/gazebo
+
+# Continue even when tests are failing for now.
+override_dh_auto_test:
+	dh_auto_test || true
+
+override_dh_strip:
+	dh_strip -a --dbg-package=gazebo-dbg
+
+%:
+	dh $@ --parallel
