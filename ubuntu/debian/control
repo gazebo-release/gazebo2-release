@@ -4,7 +4,7 @@ Maintainer: Nate Koenig <nate@osrfoundation.org>
 Section: science
 Priority: extra
 Build-Depends: cmake,
-     debhelper (>= 7.0.50~),
+     debhelper (>= 9),
      doxygen,
      doxygen-latex,
      libfreeimage-dev,
