@@ -1,3 +1,9 @@
+gazebo (1.9.1-1~quantal) quantal; urgency=high
+
+  * Release 1.9.1-1
+
+ -- Steve Peters <scpeters@osrfoundation.org>  Tue, 20 Aug 2013 12:45:00 -0700
+
 gazebo (1.9.0-1~quantal) quantal; urgency=high
 
   * Release 1.9.0-1
