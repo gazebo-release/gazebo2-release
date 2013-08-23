@@ -1,3 +1,9 @@
+gazebo (1.9.1-2~precise) precise; urgency=high
+
+  * Release 1.9.1-2, rebuild against sdformat 1.4.7
+
+ -- Steve Peters <scpeters@osrfoundation.org>  Tue, 23 Aug 2013 10:30:00 -0700
+
 gazebo (1.9.1-1~precise) precise; urgency=high
 
   * Release 1.9.1-1
