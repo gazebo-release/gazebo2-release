@@ -31,4 +31,4 @@ override_dh_auto_test:
 	true
 
 override_dh_strip:
-	dh_strip --dbg-package=gazebo-dbg
+	dh_strip --dbg-package=gazebo-nightly-dbg
