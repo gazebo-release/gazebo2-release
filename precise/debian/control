@@ -5,6 +5,8 @@ Section: devel
 Priority: extra
 Build-Depends: cmake,
      debhelper (>= 7.0.50~),
+     doxygen,
+     doxygen-latex,
      libfreeimage-dev,
      libprotoc-dev,
      libprotobuf-dev,
@@ -32,6 +34,8 @@ Build-Depends: cmake,
      libavcodec-dev,
      libswscale-dev,
      sdformat-prerelease (>= 1.4.4~)
+Vcs-Browser: https://bitbucket.org/osrf/gazebo-release
+Vcs-Hg: https://bitbucket.org/osrf/gazebo-release
 Homepage: http://gazebosim.org
 
 Package: gazebo-prerelease
@@ -67,13 +71,19 @@ Depends: libfreeimage3,
      libavcodec53 | libavcodec-extra-53,
      libswscale2 | libswscale-extra-2,
      sdformat-prerelease (>= 1.4.4~),
+     ttf-dejavu-core,
      ${misc:Depends}
-Provides: gazebo-provider
 Conflicts: gazebo, gazebo-nightly
-Breaks: drcsim (<< 2.6.5)
-Description: 3D dynamics simulator for robotics
- Open source robot simulator designed to accurately simulate robots and worlds.
-Homepage: http://gazebosim.org
+Description: Gazebo simulator - Main package
+ Gazebo is a multi-robot simulator for outdoor environments. Like
+ Stage (part of the Player project), it is capable of simulating a
+ population of robots, sensors and objects, but does so in a
+ three-dimensional world. It generates both realistic sensor feedback
+ and physically plausible interactions between objects (it includes an
+ accurate simulation of rigid-body physics).
+ .
+ This package contains all the main files to make the simulator work,
+ including executables, libraries, models, etc.
 
 Package: gazebo-prerelease-dbg
 Architecture: any
@@ -82,5 +92,12 @@ Priority: extra
 Depends:
     gazebo-prerelease (= ${binary:Version}), ${misc:Depends}
 Conflicts: gazebo-dbg, gazebo-nightly-dbg
-Description: debugging symbols for gazebo
- This package contains the debugging symbols for gazebo
+Description: Gazebo simulator - Debugging symbols 
+ Gazebo is a multi-robot simulator for outdoor environments. Like
+ Stage (part of the Player project), it is capable of simulating a
+ population of robots, sensors and objects, but does so in a
+ three-dimensional world. It generates both realistic sensor feedback
+ and physically plausible interactions between objects (it includes an
+ accurate simulation of rigid-body physics).
+ .
+ This package contains the debugging symbols.
