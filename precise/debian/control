@@ -31,7 +31,7 @@ Build-Depends: cmake,
      libavformat-dev,
      libavcodec-dev,
      libswscale-dev,
-     sdformat (>= 1.4.4~)
+     sdformat-prerelease (>= 1.4.4~)
 Homepage: http://gazebosim.org
 
 Package: gazebo-prerelease
@@ -66,8 +66,9 @@ Depends: libfreeimage3,
      libavformat53 | libavformat-extra-53,
      libavcodec53 | libavcodec-extra-53,
      libswscale2 | libswscale-extra-2,
-     sdformat (>= 1.4.4~),
+     sdformat-prerelease (>= 1.4.4~),
      ${misc:Depends}
+Provides: gazebo-provider
 Conflicts: gazebo, gazebo-nightly
 Breaks: drcsim (<< 2.6.5)
 Description: 3D dynamics simulator for robotics
