@@ -75,7 +75,7 @@ Depends: libfreeimage3,
      ${misc:Depends}
 Provides: gazebo-provider
 Conflicts: gazebo-prerelease, gazebo-nightly
-Breaks:  drcsim (<< 3.1.0),
+Breaks:  drcsim (<= 3.0.0-1),
          ros-groovy-gazebo-plugins (<< 2.3.3),
          ros-groovy-gazebo-ros (<< 2.3.3)
 Description: Gazebo simulator - Main package
