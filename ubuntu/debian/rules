@@ -11,7 +11,7 @@ export DH_VERBOSE=1
 export DH_OPTIONS=-v
 
 %:
-	dh  $@
+	dh  $@ --parallel 
 
 override_dh_auto_configure:
 	# Not using the Debug CMAKE compilation type because of losing the
