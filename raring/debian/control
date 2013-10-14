@@ -1,4 +1,4 @@
-Source: gazebo
+Source: gazebo2
 Standards-Version: 3.9.3
 Maintainer: Nate Koenig <nate@osrfoundation.org>
 Section: devel
@@ -34,11 +34,11 @@ Build-Depends: cmake,
      libavcodec-dev,
      libswscale-dev,
      sdformat (>= 1.4.7~)
-Vcs-Browser: https://bitbucket.org/osrf/gazebo-release
-Vcs-Hg: https://bitbucket.org/osrf/gazebo-release
-Homepage: http://gazebosim.org
+Vcs-Browser: https://bitbucket.org/osrf/gazebo2-release
+Vcs-Hg: https://bitbucket.org/osrf/gazebo2-release
+Homepage: http://gazebo2sim.org
 
-Package: gazebo
+Package: gazebo2
 Architecture: any
 Section: devel
 Priority: extra
@@ -73,11 +73,11 @@ Depends: libfreeimage3,
      sdformat (>= 1.4.7~),
      ttf-dejavu-core,
      ${misc:Depends}
-Provides: gazebo-provider
-Conflicts: gazebo-prerelease, gazebo-nightly
+Provides: gazebo2-provider
+Conflicts: gazebo2-prerelease, gazebo2-nightly
 Breaks:  drcsim (<= 3.0.0-1),
-         ros-hydro-gazebo-plugins (<< 2.3.3),
-         ros-hydro-gazebo-ros (<< 2.3.3)
+         ros-hydro-gazebo2-plugins (<< 2.3.3),
+         ros-hydro-gazebo2-ros (<< 2.3.3)
 Description: Gazebo simulator - Main package
  Gazebo is a multi-robot simulator for outdoor environments. Like
  Stage (part of the Player project), it is capable of simulating a
@@ -89,13 +89,13 @@ Description: Gazebo simulator - Main package
  This package contains all the main files to make the simulator work,
  including executables, libraries, models, etc.
 
-Package: gazebo-dbg
+Package: gazebo2-dbg
 Architecture: any
 Section: debug
 Priority: extra
 Depends:
-    gazebo (= ${binary:Version}), ${misc:Depends}
-Conflicts: gazebo-prerelease-dbg, gazebo-nightly-dbg
+    gazebo2 (= ${binary:Version}), ${misc:Depends}
+Conflicts: gazebo2-prerelease-dbg, gazebo2-nightly-dbg
 Description: Gazebo simulator - Debugging symbols 
  Gazebo is a multi-robot simulator for outdoor environments. Like
  Stage (part of the Player project), it is capable of simulating a
