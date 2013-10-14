@@ -74,10 +74,14 @@ Depends: libfreeimage3,
      ttf-dejavu-core,
      ${misc:Depends}
 Provides: gazebo2-provider
-Conflicts: gazebo2-prerelease, gazebo2-nightly
+Conflicts: gazebo2-prerelease, 
+           gazebo2-nightly,
+           gazebo,
+           gazebo-prerelease,
+           gazebo-nightly
 Breaks:  drcsim (<= 3.0.0-1),
-         ros-hydro-gazebo2-plugins (<< 2.3.3),
-         ros-hydro-gazebo2-ros (<< 2.3.3)
+         ros-hydro-gazebo-plugins,
+         ros-hydro-gazebo-ros
 Description: Gazebo simulator - Main package
  Gazebo is a multi-robot simulator for outdoor environments. Like
  Stage (part of the Player project), it is capable of simulating a
