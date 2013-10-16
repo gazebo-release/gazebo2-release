@@ -23,7 +23,7 @@ override_dh_shlibdeps:
 	dh_shlibdeps -- --ignore-missing-info
 
 override_dh_auto_install:
-	dh_auto_install --destdir=debian/gazebo2
+	dh_auto_install --destdir=debian/gazebo-current
 
 override_dh_auto_test:
 	echo -- Skipping tests
@@ -31,4 +31,4 @@ override_dh_auto_test:
 	true
 
 override_dh_strip:
-	dh_strip --dbg-package=gazebo2-dbg
+	dh_strip --dbg-package=gazebo-current-dbg

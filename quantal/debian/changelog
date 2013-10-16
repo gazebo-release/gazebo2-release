@@ -1,5 +1,5 @@
-gazebo2 (2.0.0-1~quantal) quantal; urgency=high
+gazebo-current (2.0.0-1~quantal) quantal; urgency=high
 
   * Release 2.0.0-1
 
- -- Jose Luis Rivero <jrivero@osrfoundation.org>  Mon, 14 Oct 2013 13:00:00 -0700
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  Mon, 16 Oct 2013 13:00:00 -0700
