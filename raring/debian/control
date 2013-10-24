@@ -36,7 +36,7 @@ Build-Depends: cmake,
      sdformat (>= 1.4.7~)
 Vcs-Browser: https://bitbucket.org/osrf/gazebo-current-release
 Vcs-Hg: https://bitbucket.org/osrf/gazebo-current-release
-Homepage: http://gazebo-currentsim.org
+Homepage: http://gazebosim.org
 
 Package: gazebo-current
 Architecture: any
