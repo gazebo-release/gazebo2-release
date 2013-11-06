@@ -33,7 +33,7 @@ Build-Depends: cmake,
      libavformat-dev,
      libavcodec-dev,
      libswscale-dev,
-     sdformat (>= 1.4.7~)
+     libsdformat-dev (>= 1.4.7~)
 Vcs-Browser: https://bitbucket.org/osrf/gazebo-current-release
 Vcs-Hg: https://bitbucket.org/osrf/gazebo-current-release
 Homepage: http://gazebosim.org
@@ -71,7 +71,7 @@ Depends: libfreeimage3,
      libavformat53 | libavformat-extra-53,
      libavcodec53 | libavcodec-extra-53,
      libswscale2 | libswscale-extra-2,
-     sdformat (>= 1.4.7~),
+     libsdformat-dev (>= 1.4.7~),
      ttf-dejavu-core,
      ${misc:Depends}
 Provides: gazebo-provider
