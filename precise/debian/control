@@ -33,6 +33,7 @@ Build-Depends: cmake,
      libavformat-dev,
      libavcodec-dev,
      libswscale-dev,
+     ruby-ronn,
      libsdformat-dev (>= 1.4.7~)
 Vcs-Browser: https://bitbucket.org/osrf/gazebo-current-release
 Vcs-Hg: https://bitbucket.org/osrf/gazebo-current-release
