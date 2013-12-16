@@ -59,7 +59,7 @@ Package: gazebo
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-	 libgazebo1.9 (= ${binary:Version}),
+	 libgazebo2 (= ${binary:Version}),
 	 gazebo-common (= ${source:Version})
 Suggests: gazebo-doc
 Multi-Arch: foreign
@@ -72,13 +72,13 @@ Description: Open Source Robotics Simulator
  and physically plausible interactions between objects (it includes an
  accurate simulation of rigid-body physics).
 
-Package: libgazebo1.9
+Package: libgazebo2
 Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Multi-Arch: same
-Conflicts: libgazebo1.9-prerelease, libgazebo1.9-nightly
+Conflicts: libgazebo2-prerelease, libgazebo2-nightly
 Description: Open Source Robotics Simulator - shared library
  Gazebo is a multi-robot simulator for outdoor environments. Like
  Stage (part of the Player project), it is capable of simulating a
@@ -106,7 +106,7 @@ Depends: libtbb-dev,
 	 libcegui-mk2-dev,
 	 libgts-dev,
 	 libode-dev,
-	 libgazebo1.9 (= ${binary:Version}),
+	 libgazebo2 (= ${binary:Version}),
 	 gazebo-common (= ${source:Version}),
 	 ${misc:Depends}
 Multi-Arch: same
