@@ -1,1 +1,3 @@
-../../ubuntu/debian/libgazebo-dev.install
+usr/include/*
+usr/lib/*.so
+usr/lib/pkgconfig/*.pc
