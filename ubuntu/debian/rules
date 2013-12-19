@@ -35,10 +35,6 @@ override_dh_auto_build-indep:
 override_dh_install:
 	dh_install -- # Install.
 
-	# Remove unwanted shell extension.
-	mv debian/gazebo/usr/bin/gzmodel_create.sh \
-	   debian/gazebo/usr/bin/gzmodel_create
-
 	# Get rid of fonts already packaged elsewhere.
 	tmp=`ls debian/gazebo-common/usr/share/gazebo-*/media/gui/fonts/DejaVuSans.ttf` \
 	&& rm $$tmp \
