@@ -34,7 +34,7 @@ Build-Depends: cmake,
      libavformat-dev,
      libavcodec-dev,
      libswscale-dev,
-     sdformat (>= 1.4.4~)
+     libsdformat-dev,
 Vcs-Browser: https://bitbucket.org/osrf/gazebo2-release
 Vcs-Hg: https://bitbucket.org/osrf/gazebo2-release
 Homepage: http://gazebosim.org
