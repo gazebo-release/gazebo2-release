@@ -39,6 +39,13 @@ Vcs-Browser: https://bitbucket.org/osrf/gazebo2-release
 Vcs-Hg: https://bitbucket.org/osrf/gazebo2-release
 Homepage: http://gazebosim.org
 
+Package: gazebo-current
+Depends: gazebo2, ${misc:Depends}
+Architecture: all
+Section: oldlibs
+Description: transitional package from gazebo-current to gazebo2
+ This is a transitional dummy package. It can safely be removed.
+
 Package: gazebo2
 Architecture: any
 Section: devel
@@ -78,6 +85,8 @@ Provides: gazebo2-provider
 Conflicts: gazebo2,
            gazebo2-prerelease,
            gazebo2-nightly
+Replaces: gazebo-current (<< 2.2.2-2~)
+Breaks: gazebo-current (<< 2.2.2-2~)
 Description: Gazebo simulator - Main package
  Gazebo is a multi-robot simulator for outdoor environments. Like
  Stage (part of the Player project), it is capable of simulating a
