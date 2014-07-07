@@ -36,6 +36,7 @@ Build-Depends: cmake,
      libswscale-dev,
      ruby-ronn,
      libsdformat-dev (>= 1.4.11-1osrf1),
+     libsdformat-dev (< 2.0.0)
 Vcs-Browser: https://bitbucket.org/osrf/gazebo2-release
 Vcs-Hg: https://bitbucket.org/osrf/gazebo2-release
 Homepage: http://gazebosim.org
@@ -73,6 +74,7 @@ Depends: libfreeimage3,
      libavcodec54 | libavcodec-extra-54,
      libswscale2 | libswscale-extra-2,
      libsdformat-dev (>= 1.4.11-1osrf1),
+     libsdformat-dev (< 2.0.0),
      ttf-dejavu-core,
      ${misc:Depends}
 Provides: gazebo2-provider
