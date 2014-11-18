@@ -1,3 +1,9 @@
+gazebo2 (2.2.4-1~trusty) trusty; urgency=medium
+
+  * gazebo2 2.2.4-1 release
+
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  Wed, 19 Nov 2014 00:52:12 +0100
+
 gazebo2 (2.2.3-1~trusty) trusty; urgency=low
 
   * gazebo2 2.2.3-1 release
